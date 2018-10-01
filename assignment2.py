@@ -15,15 +15,11 @@
    Let's get started
 
 5.
-   >>> s="Acadview"
-   >>> course="Python"
-   >>> fees=5000
-   >>> print("s","=",s )
-   s = Acadview
-   >>> print("course","=",course)
-   course = Python
-   >>> print("fees","=",fees)
-   fees = 5000
+    >>>s="Acadview"
+    >>>course="Python"
+    >>>fees=5000
+    >>>print('%s %s %d' %(s,course,fees))
+       Acadview Python 5000
 
 
 6. r=int(input("Enter the radius of the circle:"))
