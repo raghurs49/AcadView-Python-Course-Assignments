@@ -1,13 +1,20 @@
 #Q.1- Take an input year from user and decide whether it is a leap year or not.
-'''
+
 year=int(input('Enter a year to check whether it\'s leap year or not:'))
-if year%4==0:
+if (year%4==0)and(year%100==0)and(year%400==0):
     print("it is a leap year")
 else:
     print("it is not a leap year")
-'''
+
+================ RESTART: /root/.atom/practice5 assgnment.py ================
+Enter a year to check whether it's leap year or not:2012
+it is a leap year
+>>> 
+================ RESTART: /root/.atom/practice5 assgnment.py ================
+Enter a year to check whether it's leap year or not:1998
+it is not a leap year
 #Q.2- Take length and breadth input from user and check whether the dimensions are of square or rectangle.
-'''
+
 l=float(input("Enter the length of the figure:"))
 b=float(input("Enter the breadth of the figure:"))
 if (l==b)and(l>=0)and(b>=0):
@@ -18,9 +25,15 @@ elif (l>=0)and(b>=0):
     print("The dimensions are of rectangle & the area of rectangle is:",area)
 else:
     print("Invalid Dimensions")
-'''    
+
+================ RESTART: /root/.atom/practice5 assgnment.py ================
+Enter the length of the figure:3
+Enter the breadth of the figure:4
+The dimensions are of rectangle & the area of rectangle is: 14.0
+
+
 #Q.3- Take the input age of 3 people and determine oldest and youngest among them.
-'''
+
 p1=float(input("Enter the present age of the first person:"))
 p2=float(input("Enter the present age of the second person:"))
 p3=float(input("Enter the present age of the third person:"))
@@ -28,7 +41,13 @@ old_person=max(p1,p2,p3)
 youngest_person=min(p1,p2,p3)
 print("The oldest of the three persons presently is:",old_person)
 print("The youngest of the three persons presently is:",youngest_person)
-'''
+
+================ RESTART: /root/.atom/practice5 assgnment.py ================
+Enter the present age of the first person:12 
+Enter the present age of the second person:23
+Enter the present age of the third person:32
+The oldest of the three persons presently is: 32.0
+The youngest of the three persons presently is: 12.0
 
 #Q.4- Ask user to enter age, sex ( M or F ), marital status ( Y or N ) and then using following rules print their place of service.
 
@@ -36,7 +55,7 @@ print("The youngest of the three persons presently is:",youngest_person)
 #2. if employee is a male and age is in between 20 to 40 then he may work in anywhere
 #3. if employee is male and age is in between 40 t0 60 then he will work in urban areas only.
 #4. And any other input of age should print "ERROR".
-'''
+
 emp_age=float(input("Enter your present age:"))
 emp_sex=input("Enter your sex (M or F):")
 emp_status=input("Enter your marital status (Y or N):")
@@ -48,12 +67,17 @@ elif (emp_sex==('M')) and (40<=emp_age<=60):
       print("He will work in urban areas only")
 else:
       print("ERROR!!!!")
-'''    
+   
 
+================ RESTART: /root/.atom/practice5 assgnment.py ================
+Enter your present age:23
+Enter your sex (M or F):M
+Enter your marital status (Y or N):N
+He may work in anywhere
 
 #Q.5- A shop will give discount of 10% if the cost of purchased quantity is more than 1000.Ask user for quantity Suppose, one unit will cost 100. Judge and print total cost for user.
 #Loops
-'''
+
 quantity=int(input("Enter the quantity of the items u buy:"))
 cost=(quantity*100)
 if cost>1000:
@@ -62,3 +86,436 @@ if cost>1000:
     print("The cost of the items you bought is :",cost)
 else:
     print("The cost of the items you bought is:",cost)
+
+================ RESTART: /root/.atom/practice5 assgnment.py ================
+Enter the quantity of the items u buy:500
+The cost of the items you bought is : 45000.0
+
+#Q.1- Take 10 integers from user and print it on screen.
+
+x = []
+for i in range(10):
+    x.append(input("Enter the elements u want to print:"))
+    print(x,sep='\n')
+
+
+================ RESTART: /root/.atom/practice5 assgnment.py ================
+Enter the elements u want to print:1 2 3 44 56 6
+['1 2 3 44 56 6']
+
+#Q.2- Write an infinite loop.An infinite loop never ends. Condition is always true.
+
+x="Welcome!!! It is an infinite loop."
+while(True):
+    print(x)
+    
+================ RESTART: /root/.atom/practice5 assgnment.py ================
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Welcome!!! It is an infinite loop.
+Traceback (most recent call last):
+  File "/root/.atom/practice5 assgnment.py", line 3, in <module>
+    print(x)
+KeyboardInterrupt
+
+
+#Q.3- Create a list of integer elements by user input. Make a new list which will store square of elements of previous list.
+
+lst=list(map(int,input("Enter a list of elements :").split()))
+ls_square = []
+print("Original List",lst)
+for i in lst:
+         ls_square.append(i**2)
+         print(ls_square)
+
+================ RESTART: /root/.atom/practice5 assgnment.py ================
+Enter a list of elements :1 2 3 4 5 6 7
+Original List [1, 2, 3, 4, 5, 6, 7]
+[1]
+[1, 4]
+[1, 4, 9]
+[1, 4, 9, 16]
+[1, 4, 9, 16, 25]
+[1, 4, 9, 16, 25, 36]
+[1, 4, 9, 16, 25, 36, 49]
+
+
+#Q.4- From a list containing ints, strings and floats, make three lists to store them separately.
+lst=[12,34,54.3,34.0,"python","java"]
+lst_int=[]
+lst_str=[]
+lst_float=[]
+for i in lst:
+    if type(i)==int:
+        lst_int.append(i)
+    elif type(i)==float:
+        lst_float.append(i)
+    else:
+        lst_str.append(i)
+print("Integer's list:",lst_int)
+print("Float's list:",lst_float)
+print("String's list:",lst_str)
+
+
+
+==================== RESTART: /root/.atom/assignment5.py ====================
+Integer's list: [12, 34]
+Float's list: [54.3, 34.0]
+String's list: ['python', 'java']
+
+#Q.5- Using range(1,101), make a list containing only prime numbers.
+
+lst=list(map(int,input("Enter the integer elements to check whether they are prime number or not:").split()))
+for i in lst:
+    if (i%2==0)and(i%3==0):
+        print("No prime numbers in the whole list")
+    else:
+        lst.append(i)
+        print("The prime numbers in the entered list are:",lst)
+
+#Q.6- Print the following patterns
+ #   *
+ #  * *
+ # * * *
+ # * * * *
+
+x=6
+for i in range(0,5):
+    print(" "*x+"* "*i)
+    x -=1
+    
+==================== RESTART: /root/.atom/assignment5.py ====================
+      
+     * 
+    * * 
+   * * * 
+  * * * *
+
+#Q.7- Take inputs from user to make a list. Again take one input from user and search it in the list and delete that element, if found. Iterate over list using for loop
+
+
+lst=list(map(int,input("Enter the integral numbers in list:").split()))
+elements=int(input("Enter the elements you want to search:"))
+if elements in lst:
+    print("Congratulations! Element is present:")
+    del lst[lst.index(elements)]
+    print("New list after updations is:",lst)
+else:
+    print("Invalid Number !!! Not in list")
+
+================ RESTART: /root/.atom/practice5 assgnment.py ================
+Enter the integral numbers in list:1 23 46 7 9
+Enter the elements you want to search:9
+Congratulations! Element is present:
+New list after updations is: [1, 23, 46, 7]
+  
