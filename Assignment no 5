@@ -1,0 +1,64 @@
+#Q.1- Take an input year from user and decide whether it is a leap year or not.
+'''
+year=int(input('Enter a year to check whether it\'s leap year or not:'))
+if year%4==0:
+    print("it is a leap year")
+else:
+    print("it is not a leap year")
+'''
+#Q.2- Take length and breadth input from user and check whether the dimensions are of square or rectangle.
+'''
+l=float(input("Enter the length of the figure:"))
+b=float(input("Enter the breadth of the figure:"))
+if (l==b)and(l>=0)and(b>=0):
+    area=l*b
+    print("The dimensions are of square & the are of square is:",area)
+elif (l>=0)and(b>=0):
+    area=2*(l+b)
+    print("The dimensions are of rectangle & the area of rectangle is:",area)
+else:
+    print("Invalid Dimensions")
+'''    
+#Q.3- Take the input age of 3 people and determine oldest and youngest among them.
+'''
+p1=float(input("Enter the present age of the first person:"))
+p2=float(input("Enter the present age of the second person:"))
+p3=float(input("Enter the present age of the third person:"))
+old_person=max(p1,p2,p3)
+youngest_person=min(p1,p2,p3)
+print("The oldest of the three persons presently is:",old_person)
+print("The youngest of the three persons presently is:",youngest_person)
+'''
+
+#Q.4- Ask user to enter age, sex ( M or F ), marital status ( Y or N ) and then using following rules print their place of service.
+
+#1. if employee is female, then she will work only in urban areas.
+#2. if employee is a male and age is in between 20 to 40 then he may work in anywhere
+#3. if employee is male and age is in between 40 t0 60 then he will work in urban areas only.
+#4. And any other input of age should print "ERROR".
+'''
+emp_age=float(input("Enter your present age:"))
+emp_sex=input("Enter your sex (M or F):")
+emp_status=input("Enter your marital status (Y or N):")
+if (emp_sex==('F')):
+    print("She will work only in urban areas")
+elif (emp_sex==('M')) and (20<=emp_age<40):
+      print("He may work in anywhere")
+elif (emp_sex==('M')) and (40<=emp_age<=60):
+      print("He will work in urban areas only")
+else:
+      print("ERROR!!!!")
+'''    
+
+
+#Q.5- A shop will give discount of 10% if the cost of purchased quantity is more than 1000.Ask user for quantity Suppose, one unit will cost 100. Judge and print total cost for user.
+#Loops
+'''
+quantity=int(input("Enter the quantity of the items u buy:"))
+cost=(quantity*100)
+if cost>1000:
+    discount=(cost)*.10
+    cost-=discount
+    print("The cost of the items you bought is :",cost)
+else:
+    print("The cost of the items you bought is:",cost)
