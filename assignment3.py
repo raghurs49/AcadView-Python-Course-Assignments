@@ -5,7 +5,7 @@
 
 2. 
 
-  >>> x=["google","apple","facebook","microsoft","tesla"]
+  >>> x=x+["google","apple","facebook","microsoft","tesla"]
   >>> x
      ['google', 'apple', 'facebook', 'microsoft', 'tesla']
 3.
