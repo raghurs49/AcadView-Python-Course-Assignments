@@ -475,13 +475,23 @@ String's list: ['python', 'java']
 
 #Q.5- Using range(1,101), make a list containing only prime numbers.
 
-lst=list(map(int,input("Enter the integer elements to check whether they are prime number or not:").split()))
-for i in lst:
-    if (i%2==0)and(i%3==0):
-        print("No prime numbers in the whole list")
-    else:
-        lst.append(i)
-        print("The prime numbers in the entered list are:",lst)
+prime=[]
+for num in range(2,101):
+    for fact in range(2,101):
+        if num%fact ==0 and num !=fact:
+            break
+        else:
+            for i in prime:
+                if  num%i ==0:
+                    break
+            else:
+                prime.append(num)
+
+print (prime)
+
+================ RESTART: /root/.atom/practice5 assgnment.py ================
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+
 
 #Q.6- Print the following patterns
  #   *
